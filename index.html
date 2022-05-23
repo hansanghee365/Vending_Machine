@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vending Machine</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+  <main>
+    <section class="panel">
+      <img src="img/cola.png" class="" alt="">
+      <div class="select" id="cola">120円</div>
+    </section>
+    <section class="panel">
+      <img src="img/coffee.png" class="" alt="">
+      <div class="select" id="coffee">150円</div>
+    </section>
+    <section class="panel">
+      <img src="img/calpis.png" class="" alt="">
+      <div class="select" id="calpis">130円</div>
+    </section>
+  </main>
+  <div class="number">
+    <div class="num-list" id="num_1">1</div>
+    <div class="num-list" id="num_2">2</div>
+    <div class="num-list" id="num_3">3</div>
+  </div>
+  <maker>
+    <img src="img/logo.png" width="100%">
+    <div class="coin">
+      <div class="coin-btn" id="five_hund">500</div>
+      <div class="coin-btn" id="one_hund">100</div>
+      <div class="coin-btn" id="fifty">50</div>
+      <div class="coin-btn" id="ten">10</div>
+    </div>
+  </maker>
+  <div class="controls">
+    <div class="input">
+      <div class="input-text">投入金額</div>
+      <div class="total-money" id="total_money">0</div>
+      <img id="back" src="img/return.png" width="90">
+    </div>
+
+  </div>
+  </div>
+  <div class="output " id="result">
+    <div class="buy" id="buy"><img src="img/cola.png" alt="" id="target_img" width="150"></div>
+    <div class="changes" id="changes">
+      <div class="changes-text">お釣り</div>
+      <div class="changes-money" id="return_money">1000円</div>
+    </div>
+  </div>
+  <audio id="coin_input" preload="auto">
+	<source src="audio/coin_input.mp3" type="audio/mp3">
+  </audio>
+  <audio id="coin_return" preload="auto">
+	<source src="audio/coin_return.mp3" type="audio/mp3">
+  </audio>
+  <audio id="chooice" preload="auto">
+	<source src="audio/chooice.mp3" type="audio/mp3">
+  </audio>
+  <audio id="number_start" preload="auto">
+	<source src="audio/number_start.mp3" type="audio/mp3">
+  </audio>
+  <audio id="number_stop" preload="auto" volume = "0.2">
+	<source src="audio/number_stop.mp3" type="audio/mp3">
+  </audio>
+  <audio id="success" preload="auto" volume = "0.2">
+	<source src="audio/success.mp3" type="audio/mp3">
+  </audio>
+  <audio id="drink_out" preload="auto" volume = "1">
+	<source src="audio/drink_out.mp3" type="audio/mp3">
+  </audio>
+  <script src="js/main.min.js" charset="utf-8"></script>
+</body>
+</html>
